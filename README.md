@@ -1,3 +1,29 @@
+
+
+React.js | Firebase db small e-commerce website.
+Creator 303dog;
+Store domain purchased thru google domains exp anually March 24th ($12): 
+www.irononcarpetlabels.com;
+
+
+Included dependencies:
+create-react-app;
+npm install react-router-dom;
+npm install @material-ui/core @material-ui/icons;
+https://firebase.google.com/
+npm install -g firebase-tools && npm install firebase && firebase login;
+npm install react-currency-format;
+
+
+
+Build | Deploy
+firebase init;
+npm run build;
+firebase deploy;
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
