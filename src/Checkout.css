@@ -5,9 +5,9 @@
   height: max-content;
 }
 
-.checkout__ad {
-  width: 100%;
+.checkout__banner {
   margin-bottom: 10px;
+  display: flex;
 }
 
 .checkout__title {

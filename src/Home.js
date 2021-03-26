@@ -8,58 +8,64 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src=""
+          src={process.env.PUBLIC_URL + '/grey pattern.jpg'}
           alt=""
         />
-
         <div className="home__row">
           <Product
             id="0001"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            title="100 pk | Full Color Carpet Labels"
+            price={489.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image={process.env.PUBLIC_URL + './custom.jpg'}
           />
           <Product
             id="0002"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
+            title="100 pk | Full Color Carpet Labels"
+            price={489.99}
+            rating={5}
+            image={process.env.PUBLIC_URL + './label-1419931.jpg'}
+          />
+          <Product
+            id="0003"
+            title="100 pk | B & W Carpet Labels"
+            price={389.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image={process.env.PUBLIC_URL + './flat-iron-1421572.jpg'}
           />
         </div>
 
         <div className="home__row">
           <Product
-            id="0003"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
-            rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
-          />
-          <Product
             id="0004"
-            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
-            price={98.99}
-            rating={5}
-            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            title="Full Color Carpet Label w| custom option | cost per each"
+            price={5.99}
+            rating={3}
+            image={process.env.PUBLIC_URL + './made in USA.jpg'}
           />
           <Product
             id="0005"
-            title="Full Color Carpet Labels"
-            price={598.99}
+            title="B & W Carpet Label | cost per each"
+            price={3.99}
+            rating={5}
+            image={process.env.PUBLIC_URL + './ABCD blocks.jpg'}
+          />
+          <Product
+            id="0006"
+            title="Full Color Carpet Labels | cost per each"
+            price={4.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image={process.env.PUBLIC_URL + './carpetRoll.jfif'}
           />
         </div>
 
         <div className="home__row">
           <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
+            id="0007"
+            title="1000 pk | Any style | No mix and match"
+            price={1200.00}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+            image={process.env.PUBLIC_URL + './grey pattern.jpg'}
           />
         </div>
       </div>
