@@ -24,8 +24,6 @@ function Header() {
         />
       </Link>
 
-
-
       <div className="header__nav">
         <Link to={!user && '/login'}>
           <div onClick={handleAuthenticaton} className="header__option">

@@ -47,6 +47,7 @@
   justify-content: space-evenly;
 }
 
+
 .header__option {
   display: flex;
   flex-direction: column;

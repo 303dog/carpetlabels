@@ -12,7 +12,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__banner"
-          src={process.env.PUBLIC_URL + '/Allied.jpg'}
+          src=""
           alt=""
         />
 
