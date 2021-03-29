@@ -34,14 +34,14 @@ function Header() {
 
         <Link to='/orders'>
           <div className="header__option">
-            <span className="header__optionLineOne">Current</span>
+            <span className="header__optionLineOne">Past</span>
             <span className="header__optionLineTwo">Orders</span>
           </div>
         </Link>
         
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Profile</span>
+          <span className="header__optionLineTwo">Cart</span>
         </div>
 
         <Link to="/checkout">

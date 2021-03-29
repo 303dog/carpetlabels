@@ -1,5 +1,5 @@
 .payment {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .payment__container > h1 {
@@ -31,10 +31,15 @@
   
 .payment__details > form {
     max-width: 400px;
+   
   }
 
   .payment__details > h3 {
     padding-bottom: 20px;
+  }
+
+  .payment__priceContainer {
+    background-color: rgb(199, 220, 201);
   }
 
 
