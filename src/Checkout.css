@@ -7,6 +7,7 @@
 
 .checkout__banner {
   margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
 }
 
@@ -14,4 +15,9 @@
   margin-right: 10px;
   padding: 10px;
   border-bottom: 1px solid lightgray;
+}
+
+.checkout__right {
+  margin-right: 10px;
+  padding: 50px;
 }

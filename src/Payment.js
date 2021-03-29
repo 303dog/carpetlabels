@@ -30,7 +30,6 @@ function Payment() {
             });
             setClientSecret(response.data.clientSecret)
         }
-
         getClientSecret();
     }, [basket])
 
@@ -47,7 +46,6 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
             // paymentIntent => payment confirmation
-
             db
               .collection('users')
               .doc(user?.uid)
@@ -58,18 +56,14 @@ function Payment() {
                   amount: paymentIntent.amount,
                   created: paymentIntent.created
               })
-
             setSucceeded(true);
             setError(null)
             setProcessing(false)
-
             dispatch({
                 type: 'EMPTY_BASKET'
             })
-
             history.replace('/orders')
         })
-
     }
 
     const handleChange = event => {
