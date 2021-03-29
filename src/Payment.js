@@ -45,10 +45,9 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-            // paymentIntent => payment confirmation
             db
               .collection('users')
-              .doc(user?.uid)
+              .doc(user?.uid)   //<= uid
               .collection('orders')
               .doc(paymentIntent.id)
               .set({

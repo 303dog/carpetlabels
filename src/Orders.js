@@ -14,7 +14,7 @@ function Orders() {
         .collection('users')
         .doc(user?.uid)
         .collection('orders')
-        .orderBy('created', 'desc')
+        .orderBy('created', 'desc')                     //linked to firebase db
         .onSnapshot(snapshot => (
             setOrders(snapshot.docs.map(doc => ({
                 id: doc.id,
