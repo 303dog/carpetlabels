@@ -34,7 +34,7 @@ function Header() {
 
         <Link to='/orders'>
           <div className="header__option">
-            <span className="header__optionLineOne">Past</span>
+            <span className="header__optionLineOne">Recent</span>
             <span className="header__optionLineTwo">Orders</span>
           </div>
         </Link>
