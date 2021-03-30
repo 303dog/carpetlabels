@@ -1,0 +1,15 @@
+.request__container {
+    padding: 40px;
+    margin: 20px 0;
+    border: 1px solid rgb(5, 5, 5);
+    background-color: rgb(226, 223, 223);
+    position: relative;
+}
+
+.request__upload {
+    width: 18%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
