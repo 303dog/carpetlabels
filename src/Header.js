@@ -38,14 +38,10 @@ function Header() {
             <span className="header__optionLineTwo">Orders</span>
           </div>
         </Link>
-        
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Cart</span>
-        </div>
+   
 
         <Link to="/checkout">
-          <div className="header__optionBasket">
+          <div className="header__optionBasket"> 
             <ShoppingBasketIcon />
             <span className="header__optionLineTwo header__basketCount">
               {basket?.length}
@@ -53,6 +49,18 @@ function Header() {
           </div>
         </Link>
       </div>
+
+        <Link to='/request'>
+          <div className="header__optionRequest">
+            <span className="header__optionLineTwo">Get a</span>
+              <img
+              className="header__requestSample"
+              src={process.env.PUBLIC_URL + '/redQoute.png'}
+              />
+            <span className="header__optionLineTwo">Quote</span>
+          </div>
+        </Link>
+   
     </div>
   );
 }

@@ -32,7 +32,7 @@ function Login() {
 
     return (
         <div className='login'>
-            <Link to='/'>
+            <Link path='/'>
                 <img
                     className="login__logo"
                     src={process.env.PUBLIC_URL + '/Allied.jpg'}

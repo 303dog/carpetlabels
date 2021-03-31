@@ -1,15 +1,45 @@
 .request__container {
-    padding: 40px;
-    margin: 20px 0;
-    border: 1px solid rgb(5, 5, 5);
-    background-color: rgb(226, 223, 223);
-    position: relative;
+    background-color: rgb(231, 225, 225);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
 }
 
 .request__upload {
-    width: 18%;
-    padding: 12px 20px;
-    margin: 8px 0px;
-    box-sizing: border-box;
-    border: 2px solid white;
+    border: 2px solid black;
+    margin: 10px;
+    align-items: center;
 }
+
+.request__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.request__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.request__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.request__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.request__submitButton {
+    background: #f3de22;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+  }

@@ -1,5 +1,7 @@
 import firebase from "firebase";
 
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyBeiZjCu3xQ-WIYHO2mE0RgJWO7uhh479Y",
   authDomain: "irononcarpetlabels.firebaseapp.com",
@@ -12,5 +14,7 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
+
+
 
 export { db, auth };
