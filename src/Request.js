@@ -2,35 +2,34 @@ import React, { useState } from 'react';
 import './Request.css';
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
+import Raect from 'react';
 
 
 
-function Request() {
-
-  const history = useHistory();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [fName, setFname] = useState('');
+class Request extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {form: []};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+   
   
-      //this.handleChange = this.handleChange.bind(this);
-      //this.handleSubmit = this.handleSubmit.bind(this);
-    
+    handleChange = (event) => {
+      this.setState({email: event.target.email});
+      this.setState({l_name: event.target.l_name});
+      this.setState({f_name: event.target.f_name});
+      this.setState({comment: event.target.comment});
+      this.setState({upload: event.target.upload});
+      this.setState({p_number: event.target.p_number})
+    }
   
-  //  handleChange = (event) => {
-  //    this.setState({email: event.target.email});
-  //    this.setState({l_name: event.target.l_name});
-  //    this.setState({f_name: event.target.f_name});
-  //    this.setState({comment: event.target.comment});
-  //    this.setState({upload: event.target.upload});
-  //    this.setState({p_number: event.target.p_number})
-  //  }
-  //
-  //  handleSubmit = (event) => {
-  //    alert('A name was submitted: ' + this.state.value);
-  //    event.preventDefault();
-  //  }
+    handleSubmit = (event) => {
+      alert('A name was submitted: ' + this.state.value);
+      event.preventDefault();
+    }
   
-    
+    render() {
       return (
           <div classsName="request__container">
             <div className='request__container'>
@@ -67,6 +66,8 @@ function Request() {
       </div>
       )
     }
-
+  }
 
   export default Request;
+
+
